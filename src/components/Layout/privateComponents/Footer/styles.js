@@ -4,5 +4,12 @@ export const Div = styled.div`
   width: 100%;
   height: 347px;
   background-color: black;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  & > span {
+    margin-bottom: 8px;
+  }
 `;

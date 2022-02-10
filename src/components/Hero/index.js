@@ -1,11 +1,11 @@
 import React from 'react';
 import {Div} from "./styles";
 
-function Footer() {
+function Hero() {
 
     return (
         <Div />
     );
 }
 
-export default Footer;
+export default Hero;

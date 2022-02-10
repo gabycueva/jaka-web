@@ -1,30 +1,25 @@
-import React, {useState} from 'react';
-import SideMenu from "./privateComponents/SideMenu";
+import React from 'react';
+import Navbar from "./privateComponents/Navbar";
+import Footer from "./privateComponents/Footer";
+import PropTypes from "prop-types";
 
-function Layout() {
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+function Layout(props) {
 
-    const toggleHamburger = () =>{
-        setHamburgerOpen(!hamburgerOpen)
-    }
+    const { children } = props;
 
     return (
         <div>
-            <div className="navigation">
-                <ul>
-                    <li>Portfolio</li>
-                    <li>Collection</li>
-                    <li>Bio</li>
-                    <li>Contact</li>
-
-
-                </ul>
-                <div className="hamburger" onClick={toggleHamburger}>
-                    <SideMenu isOpen={hamburgerOpen}/>
-                </div>
+            <Navbar />
+            <div>
+                {children}
             </div>
+            <Footer />
         </div>
     );
+}
+
+Layout.propTypes = {
+    children: PropTypes.any,
 }
 
 export default Layout;

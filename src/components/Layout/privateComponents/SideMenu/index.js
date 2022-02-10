@@ -1,12 +1,15 @@
 import React from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
+import {Div} from "./styles";
 
 
 function SideMenu() {
     return (
-        <div>
-            <MenuIcon />
-        </div>
+        <Div>
+            <div className="hamburguer">
+                <MenuIcon/>
+            </div>
+        </Div>
     );
 }
 

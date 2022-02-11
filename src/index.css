@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/******** Bw Seido Round***********/
+
+@font-face {
+  font-family: 'Bw Seido Round';
+  src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Bw Seido Round Medium Italic';
+  src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Bw Seido Round Medium Italic';
+  src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Bw Seido Round Light';
+  src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-Light.ttf) format('truetype');
+}
+
+/********* Roboto ********************/
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: local('Roboto'), url(./fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: local('Roboto'), url(./fonts/Roboto-Medium.ttf) format('truetype');
+}
+

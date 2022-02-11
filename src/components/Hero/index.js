@@ -1,10 +1,15 @@
 import React from 'react';
-import {Div} from "./styles";
+import {Div, Logo} from "./styles";
+import logoRound from "../../images/logo-round.svg";
 
 function Hero() {
 
     return (
-        <Div />
+        <Div>
+            <Logo>
+                <img src={logoRound} />
+            </Logo>
+        </Div>
     );
 }
 

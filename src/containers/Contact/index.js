@@ -1,11 +1,23 @@
 import React from 'react';
-
+import {BigTitle, ContactInfo, Div, Flex, Line, Logo, Subtitle} from "./styles";
+import jakaBlack from "../../images/jaka-black.svg";
 
 function Contact() {
     return (
-        <>
-            <h1>Contact</h1>
-        </>
+            <Div>
+                <BigTitle>Contact</BigTitle>
+                <Subtitle>flow in business</Subtitle>
+                <Flex>
+                    <Logo>
+                        <img src={jakaBlack} />
+                    </Logo>
+                    <Line />
+                    <ContactInfo>
+                        <span>contact@jaka.com</span>
+                        <span>+52 1 685 432 2053</span>
+                    </ContactInfo>
+                </Flex>
+            </Div>
     );
 }
 

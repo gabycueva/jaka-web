@@ -12,4 +12,8 @@ export const Div = styled.div`
   & > span {
     margin-bottom: 8px;
   }
+  & img {
+    width: 150px;
+    filter: invert(1);
+  }
 `;

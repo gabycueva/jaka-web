@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
-import {Div} from "./styles";
+import {Div, Hamburguer, Logo} from "./styles";
+import jakaBlack from "../../../../images/jaka-black.svg";
+import SideMenu from "../SideMenu";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -10,24 +13,20 @@ function Navbar() {
 
     return (
         <Div>
-            {/*<div className="navigation">
-                    <div className="logo">
-                        Logotipo
-                    </div>
-            </div>
-            <div className="links">
-                <ul>
-                    <li>Portfolio</li>
-                    <li>Collection</li>
-                    <li>Bio</li>
-                    <li>Contact</li>
-
-
-                </ul>
-                <div onClick={toggleHamburger}>
-                    <SideMenu isOpen={hamburgerOpen}/>
-                </div>
-            </div>*/}
+            <Logo>
+                <Link to="/">
+                    <img src={jakaBlack} />
+                </Link>
+            </Logo>
+            <ul>
+                <li><Link to="/portfolio">Portfolio</Link></li>
+                <li><Link to="/collection">Collection</Link></li>
+                <li><Link to="/bio">Bio</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
+            <Hamburguer>
+                <SideMenu />
+            </Hamburguer>
         </Div>
     );
 }

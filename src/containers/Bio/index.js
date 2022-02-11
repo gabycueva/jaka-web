@@ -60,10 +60,10 @@ function Bio() {
                         <ul className="no-bullets">
                             <li>* Blockchain </li>
                             <li>Early Crypto adopter 2013 </li>
+                            <div className="doodles">
+                                <img src={doodles} width={150} />
+                            </div>
                         </ul>
-                        <div>
-                            <img src={doodles} />
-                        </div>
                     </div>
                     <div>
                         <span>+ 15 YEARS DEVELOPING TECH PRODUCTS</span>
@@ -89,8 +89,8 @@ function Bio() {
                     </div>
                 </Columns>
             </Section>
+            <MaxTitle>THE WAR OF ART</MaxTitle>
             <Information>
-                <MaxTitle>THE WAR OF ART</MaxTitle>
                 <span>Since 2011 Armando has been creating and investing in Fintech/crypto companies.</span>
                 <span>
                     Partner and co-investor with Corporate groups: Kaluz, Credito Real.
@@ -100,11 +100,9 @@ function Bio() {
                 <span>Board member and investor at https://Sixtant.io a Market Making and Prop trading firm that traded +5 B USD in September 2021 across BITSO, DY/DX, and FTX.</span>
                 <span>
                     Armando has received numerous industry awards including:
-                    <ul className="no-bullets">
-                        <li>Gamification World Conference award Barcelona 2015. </li>
-                        <li>Open Talent BBVA 2016. </li>
-                        <li>Google Fintech program in Brazil 2017. </li>
-                    </ul>
+                    <div>Gamification World Conference award Barcelona 2015. </div>
+                    <div>Open Talent BBVA 2016. </div>
+                    <div>Google Fintech program in Brazil 2017. </div>
                 </span>
                 <span>
                     Armando has been a speaker at conferences Money 2020, Finnosummit, BitConf, Creavolution, and Ripple Labs.

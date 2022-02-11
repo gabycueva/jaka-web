@@ -16,12 +16,16 @@ export const LogoContainer = styled.div`
   transition: ease 0.15s;
   &:hover {
     filter: grayscale(0);
+    cursor: pointer;
   }
   & img {
-    width: 250px;
+    width: 100%;
+    height: 243px;
+    border-radius: 40px;
   }
 `;
 
 export const Text = styled.div`
   margin-top: 10px;
+  text-align: center;
 `;

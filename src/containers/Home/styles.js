@@ -12,6 +12,7 @@ export const Intro = styled.div`
     margin-bottom: 20px;
     font-family: 'Bw Seido Round';
     font-size: 40px;
+    text-align: center;
 
   }
   
@@ -24,6 +25,7 @@ export const Intro = styled.div`
 
 export const Gif = styled.div`
   display: flex;
+  text-align: center;
   justify-content: center;
   align-content: center;
   flex-direction: column;

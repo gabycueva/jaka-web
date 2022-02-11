@@ -10,4 +10,5 @@ export const Bar = styled.div`
   align-items: center;
   text-transform: uppercase;
   border-radius: 8px;
+  font-family: 'Bw Seido Round';
 `;

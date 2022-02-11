@@ -29,6 +29,11 @@ code {
   src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-MediumItalic.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Bw Seido Round Light';
+  src: local('BwSeidoRound'), url(./fonts/BwSeidoRound-Light.ttf) format('truetype');
+}
+
 /********* Roboto ********************/
 
 @font-face {

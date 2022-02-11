@@ -11,7 +11,9 @@ export const Div = styled.div`
   color: #fff;
   & > span {
     margin-bottom: 8px;
+    font-family: 'Bw Seido Round';
   }
+  
   & img {
     width: 150px;
     filter: invert(1);

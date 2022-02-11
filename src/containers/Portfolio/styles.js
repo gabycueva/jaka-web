@@ -1,13 +1,39 @@
 import styled from "styled-components";
 
-export const Div = styled.div``;
+export const Div = styled.div`
+  & .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+      width: 250px;
+    }
+    
+    & span {
+      font-family: 'Bw Seido Round';
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 40px;
+      margin-left: 50px;
+    }
+    
+  }
+`;
 
 export const Header = styled.div`
   margin: 50px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   & > span:first-child {
-    margin-right: 20px;
+    margin-right: 50px;
+    & img {
+      width: 200px;
+    }
+  }
+  & > span:last-child {
+    font-family: 'Bw Seido Round';
+    font-size: 28px;
   }
 `;
 

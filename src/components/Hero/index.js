@@ -7,7 +7,7 @@ function Hero() {
     return (
         <Div>
             <Logo>
-                <img src={logoRound} />
+                <img alt="hero" src={logoRound} />
             </Logo>
         </Div>
     );

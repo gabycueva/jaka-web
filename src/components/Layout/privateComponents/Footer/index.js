@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <Div>
-            <span><img src={jakaBlack} /></span>
+            <span><img alt="logo" src={jakaBlack} /></span>
             <span>Controladora JAKA SAPI de CV</span>
             <span>(C) JAKA 2022.</span>
         </Div>

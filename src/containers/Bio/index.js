@@ -21,7 +21,7 @@ function Bio() {
         <Div>
             <Flex>
                 <Picture>
-                    <img src={BioImage} />
+                    <img alt="bio" src={BioImage} />
                 </Picture>
                 <BioDescription>
                     <Title>Armando Kuroda</Title>
@@ -61,7 +61,7 @@ function Bio() {
                             <li>* Blockchain </li>
                             <li>Early Crypto adopter 2013 </li>
                             <div className="doodles">
-                                <img src={doodles} width={150} />
+                                <img alt="doodle" src={doodles} width={150} />
                             </div>
                         </ul>
                     </div>
@@ -110,7 +110,7 @@ function Bio() {
                 <span>Currently building web3 and play-to-earn ventures.</span>
             </Information>
             <Logo>
-                <img src={logo} />
+                <img alt="logo" src={logo} />
             </Logo>
         </Div>
     );

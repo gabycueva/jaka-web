@@ -9,7 +9,7 @@ function LinkCard(props) {
     return (
         <Div>
             <LogoContainer>
-                <div><img src={image} /></div>
+                <div><img alt="card" src={image} /></div>
             </LogoContainer>
             <Text>{text}</Text>
         </Div>

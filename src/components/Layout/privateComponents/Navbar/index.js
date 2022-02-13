@@ -1,21 +1,21 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Div, Hamburguer, Logo} from "./styles";
 import jakaBlack from "../../../../images/jaka-black.svg";
 import SideMenu from "../SideMenu";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-    const [hamburgerOpen, setHamburgerOpen] = useState(false);
+/*    const [hamburgerOpen, setHamburgerOpen] = useState(false);*/
 
-    const toggleHamburger = () =>{
+/*    const toggleHamburger = () =>{
         setHamburgerOpen(!hamburgerOpen)
-    }
+    }*/
 
     return (
         <Div>
             <Logo>
                 <Link to="/">
-                    <img src={jakaBlack} />
+                    <img alt="logo" src={jakaBlack} />
                 </Link>
             </Logo>
             <ul>

@@ -9,7 +9,7 @@ function SimpleCard(props) {
     return (
         <Div>
             <LogoContainer>
-                <div><img src={image} /></div>
+                <div><img alt="simplecard" src={image} /></div>
             </LogoContainer>
             <Text>{text}</Text>
         </Div>

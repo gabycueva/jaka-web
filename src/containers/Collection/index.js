@@ -1,7 +1,7 @@
 import React from 'react';
 import {Div, Flex, Rectangle, Text} from "./styles";
 import Banner from "../../components/Banner";
-import LinkCard from "../../components/LinkCard";
+/*import LinkCard from "../../components/LinkCard";*/
 import credilikeme from "../../images/artis-example.jpg";
 import SimpleCard from "../../components/SimpleCard";
 

@@ -10,7 +10,7 @@ function Contact() {
                 <Subtitle>flow in business</Subtitle>
                 <Flex>
                     <Logo>
-                        <img src={jakaBlack} />
+                        <img alt="logo" src={jakaBlack} />
                     </Logo>
                     <Line />
                     <ContactInfo>

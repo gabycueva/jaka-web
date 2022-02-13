@@ -13,7 +13,7 @@ function Portfolio() {
     return (
         <Div>
             <Header>
-                <span><img src={jakaBlack} /></span>
+                <span><img alt="logo" src={jakaBlack} /></span>
                 <span>PORTFOLIO</span>
             </Header>
             <Container>
@@ -44,7 +44,7 @@ function Portfolio() {
             <Banner
                 content={
                 <div className="banner">
-                    <img src={logoRound} />
+                    <img alt="logo" src={logoRound} />
                     <span>learning machine</span>
                 </div>
             }

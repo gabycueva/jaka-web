@@ -15,7 +15,7 @@ function Home() {
                 </span>
             </Intro>
             <Gif>
-                <div><img src={trustCode} /></div>
+                <div><img alt="trust" src={trustCode} /></div>
                 <span>The practicing mind</span>
             </Gif>
         </div>

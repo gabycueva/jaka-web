@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div``;
 
@@ -15,6 +16,11 @@ export const Picture = styled.div`
   & img {
     width: 350px;
     height: 350px;
+
+    ${mediaQuery} {
+      width: 250px;
+      height:250px;
+    }
   }
 `;
 

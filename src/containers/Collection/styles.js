@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div`
   & .title {
@@ -36,6 +37,9 @@ export const Flex = styled.div`
   & > div:nth-child(2) {
     margin: 0 15px;
   }
+  ${mediaQuery} {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Rectangle = styled.div`
@@ -43,4 +47,9 @@ export const Rectangle = styled.div`
   height: 675px;
   background-color: #EDEDED;
   margin: 100px 0 50px;
+
+  ${mediaQuery} {
+    height: 338px;
+  }
+
 `;

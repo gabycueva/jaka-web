@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { mediaQuery } from "../../helpers/responsive";
+
 export const Div = styled.div`
   & .banner {
     background-color: #000;
@@ -45,6 +47,11 @@ export const Container = styled.div`
 export const Flex = styled.div`
   display: flex;
   margin: 30px 0;
+
+  ${mediaQuery} {
+    flex-wrap: wrap;
+  }
+
   & > div:nth-child(2) {
     margin: 0 15px;
   }

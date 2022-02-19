@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Div = styled.div`
   & .banner {
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     & img {
-      width: 250px;
+      width: 100%;
     }
     
     & span {

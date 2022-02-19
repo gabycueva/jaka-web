@@ -15,6 +15,7 @@ import {
 import BioImage from "../../images/bio-image.png";
 import logo from "../../images/logo-image.svg";
 import doodles from "../../images/doodles.svg";
+import BioGif from "../../images/gifs/Bio_WarOfArt.gif";
 
 function Bio() {
     return (
@@ -89,7 +90,7 @@ function Bio() {
                     </div>
                 </Columns>
             </Section>
-            <MaxTitle>THE WAR OF ART</MaxTitle>
+            <MaxTitle><img alt="gif" src={BioGif} /></MaxTitle>
             <Information>
                 <span>Since 2011 Armando has been creating and investing in Fintech/crypto companies.</span>
                 <span>

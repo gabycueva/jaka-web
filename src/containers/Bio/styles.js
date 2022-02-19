@@ -117,7 +117,9 @@ export const MaxTitle = styled.div`
   font-family: 'Bw Seido Round';
   font-size: 100px;
   text-align: center;
-  margin-bottom: 50px;
+    & img {
+      width: 100%;
+    }
 `;
 
 export const Logo = styled.div`

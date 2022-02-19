@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from "../../components/Hero";
 import {Gif, Intro} from "./styles";
-import trustCode from "../../images/trust-code.svg";
+import trustCode from "../../images/gifs/Home_trust_code.gif";
 
 
 function Home() {
@@ -16,7 +16,6 @@ function Home() {
             </Intro>
             <Gif>
                 <div><img alt="trust" src={trustCode} /></div>
-                <span>The practicing mind</span>
             </Gif>
         </div>
     );

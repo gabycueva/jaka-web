@@ -4,6 +4,7 @@ import Banner from "../../components/Banner";
 /*import LinkCard from "../../components/LinkCard";*/
 import credilikeme from "../../images/artis-example.jpg";
 import SimpleCard from "../../components/SimpleCard";
+import collectionGif from "../../images/gifs/Collection_art&Finance.gif"
 
 
 function Collection() {
@@ -56,11 +57,9 @@ function Collection() {
                     <SimpleCard image={credilikeme} text="Artista 9 " />
                 </Flex>
             </div>
-            <Banner
-                content={
-                    <div className="big-title">ART & FINANCE</div>
-                }
-            />
+            <div className="big-title">
+                <img alt="gif" src={collectionGif} />
+            </div>
         </Div>
     );
 }

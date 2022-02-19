@@ -4,7 +4,7 @@ import TitleBar from "../../components/TitleBar";
 import LinkCard from "../../components/LinkCard";
 import Banner from "../../components/Banner";
 import jakaBlack from "../../images/jaka-black.svg";
-import logoRound from "../../images/logo-round.svg";
+import logoRound from "../../images/gifs/Portfolio_LearningMachine.gif";
 import credilikeme from "../../images/credilikeme.svg";
 import kobra from "../../images/kobra.svg";
 
@@ -41,14 +41,9 @@ function Portfolio() {
                     <LinkCard text="Is simply dummy text of the printing and typesetting industry. " />
                 </Flex>
             </Container>
-            <Banner
-                content={
                 <div className="banner">
                     <img alt="logo" src={logoRound} />
-                    <span>learning machine</span>
                 </div>
-            }
-            />
         </Div>
     );
 }

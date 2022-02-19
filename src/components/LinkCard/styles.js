@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div`
   width: 100%;
@@ -24,4 +25,8 @@ export const LogoContainer = styled.div`
 
 export const Text = styled.div`
   margin-top: 10px;
+  text-align: center;
+  ${mediaQuery} {
+    margin-bottom: 10px;
+  }
 `;

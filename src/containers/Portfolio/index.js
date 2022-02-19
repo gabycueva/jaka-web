@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Div, Flex, Header} from "./styles";
 import TitleBar from "../../components/TitleBar";
 import LinkCard from "../../components/LinkCard";
-import Banner from "../../components/Banner";
 import jakaBlack from "../../images/jaka-black.svg";
 import logoRound from "../../images/gifs/Portfolio_LearningMachine.gif";
 import credilikeme from "../../images/credilikeme.svg";

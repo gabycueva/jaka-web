@@ -7,10 +7,10 @@ export const Div = styled.div`
     font-size: 48px;
   }
   & .big-title {
-    font-family: 'Bw Seido Round';
-    color: #fff;
-    font-size: 60px;
-    padding: 70px 0;
+    background: #000;
+    & img {
+      width: 100%;
+    }
   }
 `;
 

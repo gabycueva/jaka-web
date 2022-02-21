@@ -20,6 +20,10 @@ export const Text = styled.div`
     flex-direction: column;
     font-family: 'Roboto Light';
     padding: 0 200px;
+
+    ${mediaQuery} {
+      padding: 0 24px;
+    }
   
     & span {
       padding-bottom: 20px;
@@ -39,6 +43,7 @@ export const Flex = styled.div`
   }
   ${mediaQuery} {
     flex-wrap: wrap;
+    padding: 0 24px;
   }
 `;
 

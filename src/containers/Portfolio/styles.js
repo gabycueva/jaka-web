@@ -42,6 +42,11 @@ export const Header = styled.div`
 
 export const Container = styled.div`
   margin: 0 200px;
+
+  ${mediaQuery} {
+    margin: 0 24px;
+  }
+
 `;
 
 export const Flex = styled.div`

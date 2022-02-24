@@ -18,8 +18,8 @@ export const Picture = styled.div`
     height: 350px;
 
     ${mediaQuery} {
-      width: 250px;
-      height:250px;
+      width: 200px;
+      height:200px;
     }
   }
 `;
@@ -60,6 +60,10 @@ export const Section = styled.div`
   background-color: #000;
   color: #fff;
   padding: 70px 200px;
+
+  ${mediaQuery} {
+    padding: 70px 24px;
+  }
 `;
 
 export const BigTitle = styled.div`
@@ -105,6 +109,12 @@ export const Information = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 0 200px;
+
+
+  ${mediaQuery} {
+    padding: 0 24px;
+  }
+
   & span {
     font-family: 'Roboto Light';
     padding-bottom: 20px;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Intro = styled.div`
   display: flex;
@@ -20,6 +21,11 @@ export const Intro = styled.div`
     margin: 0 200px;
     font-family: 'Roboto Light';
     font-size: 18px;
+
+    ${mediaQuery} {
+      margin: 0 24px;
+    }
+
   }
 `;
 

@@ -2,13 +2,16 @@ import styled from "styled-components";
 import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div`
-  width: 100%;
+  width: ${(props) => props.width ? props.width : "100%"};
+  ${mediaQuery} {
+    width: 100%;
+  }
 `;
 
 export const LogoContainer = styled.div`
   width: 100%;
   height: 243px;
-  background-color: #EDEDED;
+  background-color: ${(props) => props.bgColor ? props.bgColor : "#EDEDED"};
   border-radius: 40px;
   display: flex;
   justify-content: center;

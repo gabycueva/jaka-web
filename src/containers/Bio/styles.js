@@ -59,10 +59,14 @@ export const Quote = styled.div`
 export const Section = styled.div`
   background-color: #000;
   color: #fff;
-  padding: 70px 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px 0;
 
   ${mediaQuery} {
-    padding: 70px 24px;
+    padding: 70px 0;
   }
 `;
 
@@ -75,7 +79,7 @@ export const BigTitle = styled.div`
 
 export const Columns = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   text-align: left;
    & ul {
      font-family: 'Roboto Light';
@@ -107,8 +111,7 @@ export const Columns = styled.div`
 export const Information = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 200px;
+  padding: 0 250px;
 
 
   ${mediaQuery} {
@@ -118,6 +121,7 @@ export const Information = styled.div`
   & span {
     font-family: 'Roboto Light';
     padding-bottom: 20px;
+    text-align: left;
   }
   & .no-bullets {
     list-style-type: none;

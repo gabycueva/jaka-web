@@ -4,13 +4,11 @@ import {Div, LogoContainer, Text} from "./styles";
 
 function SimpleCard(props) {
 
-    const { text, image } = props;
+    const { text, image, width, position } = props;
 
     return (
-        <Div>
-            <LogoContainer>
-                <div><img alt="simplecard" src={image} /></div>
-            </LogoContainer>
+        <Div width={width}>
+            <LogoContainer image={image} position={position} />
             <Text>{text}</Text>
         </Div>
     );

@@ -1,56 +1,57 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
+import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem'
 import MenuIcon from '@mui/icons-material/Menu';
 import { Div, List } from './styles';
-import { Link } from "react-router-dom";
 
 function SideMenu() {
-  const [state, setState] = React.useState({
-    top: false,
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
+  const [anchorEl, setAnchorEl] = useState(null)
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
   };
-
-  const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-      <ul>
-                <li><Link to="/portfolio">Portfolio</Link></li>
-                <li><Link to="/collection">Collection</Link></li>
-                <li><Link to="/bio">Bio</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-      </ul>
-      </List>
-    </Box>
-  );
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <Div>
-      {['top'].map((anchor) => (
-        <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><div className='hamburguer'><MenuIcon /></div></Button>
-          <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-          >
-            {list(anchor)}
-          </Drawer>
-        </React.Fragment>
-      ))}
+      <Button
+        id="basic-button"
+        aria-controls={open ? "basic-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        onClick={handleClick}
+      >
+        <MenuIcon />
+      </Button>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        elevation={0}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+      >
+        <List>
+        <MenuItem onClick={handleClose}><Link to="/portfolio">Portfolio</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/collection">Collection</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/bio">Bio</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/contact">Contact</Link></MenuItem>
+        </List>
+      </Menu>
     </Div>
   );
 }

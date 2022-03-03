@@ -7,6 +7,7 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   
   & ul {
     color: #fff;

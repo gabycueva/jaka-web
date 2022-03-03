@@ -4,11 +4,11 @@ import {Div, LogoContainer, Text} from "./styles";
 
 function LinkCard(props) {
 
-    const { text, image } = props;
+    const { text, image, width, bgColor } = props;
 
     return (
-        <Div>
-            <LogoContainer>
+        <Div width={width}>
+            <LogoContainer bgColor={bgColor}>
                 <div><img alt="card" src={image} /></div>
             </LogoContainer>
             <Text>{text}</Text>

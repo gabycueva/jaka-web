@@ -91,6 +91,7 @@ function Bio() {
                 </Columns>
             </Section>
             <MaxTitle><img alt="gif" src={BioGif} /></MaxTitle>
+            <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
             <Information>
                 <span>Since 2011 Armando has been creating and investing in Fintech/crypto companies.</span>
                 <span>
@@ -110,6 +111,7 @@ function Bio() {
                 </span>
                 <span>Currently building web3 and play-to-earn ventures.</span>
             </Information>
+            </div>
             <Logo>
                 <img alt="logo" src={logo} />
             </Logo>

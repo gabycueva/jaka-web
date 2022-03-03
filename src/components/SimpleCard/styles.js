@@ -1,10 +1,18 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div`
-  width: 100%;
+  width: ${(props) => props.width ? props.width : "100%"};
+  ${mediaQuery} {
+    width: 100%;
+  }
 `;
 
 export const LogoContainer = styled.div`
+  background-image: url(${(props) => props.image ? props.image : "../../images/artist-example.jpg"});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: ${(props) => props.position ? props.position : "center"};
   width: 100%;
   height: 243px;
   background-color: #EDEDED;

@@ -4,21 +4,20 @@ export const Div = styled.div`
   & svg {
     fill: #fff;
   }
+  & button {
+    min-width: unset;
+  }
 `;
 
 export const List = styled.div`
   background-color: #000;
-  ul {
-    margin: 0;
+  li {
+    padding: 10px 20px;
     font-family: 'Bw Seido Round';
-    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
     text-transform: uppercase;
-    li {
-      padding: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-    }
   }
 `;

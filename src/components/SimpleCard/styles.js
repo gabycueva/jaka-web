@@ -36,4 +36,10 @@ export const LogoContainer = styled.div`
 export const Text = styled.div`
   margin-top: 10px;
   text-align: center;
+  & a:nth-child(2) {
+    margin: 0 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `;

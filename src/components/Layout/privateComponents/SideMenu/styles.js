@@ -14,6 +14,7 @@ export const List = styled.div`
   li {
     padding: 10px 20px;
     font-family: 'Bw Seido Round';
+    border-bottom: 0.5px solid #fff;
   }
   a{
     text-decoration: none;

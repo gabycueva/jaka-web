@@ -43,6 +43,7 @@ function SideMenu() {
         }}
         MenuListProps={{
           "aria-labelledby": "basic-button",
+          "disablePadding": "true",
         }}
       >
         <List>

@@ -14,6 +14,7 @@ import Isauro from "../../images/collection_artists/Isauro-Huizar.jpeg";
 import Habib from "../../images/collection_artists/Habib-Farajabadi.jpeg";
 import JoseCastañeda from "../../images/collection_artists/jose-castaneda.jpeg";
 import JoseGarcia from "../../images/collection_artists/Jose-Garcia.jpeg";
+import Troika from "../../images/collection_artists/Troika.jpeg";
 
 function Collection() {
   return (
@@ -105,28 +106,108 @@ function Collection() {
       </Text>
       <div>
         <Flex>
-          <SimpleCard image={Felipe} text="Felipe Pantone" />
-          <SimpleCard image={Ana} text="Ana Montiel" />
-          <SimpleCard image={Anthony} text="Anthony James" />
+          <SimpleCard
+            image={Felipe}
+            text="Felipe Pantone"
+            instagram
+            srcIg="https://www.instagram.com/felipepantone/?hl=en"
+            web
+            srcWeb="https://www.felipepantone.com/biography"
+          />
+          <SimpleCard
+            image={Ana}
+            text="Ana Montiel"
+            instagram
+            srcIg="https://www.instagram.com/anamontiel/"
+            web
+            srcWeb="https://anamontiel.com/"
+          />
+          <SimpleCard
+            image={Anthony}
+            text="Anthony James"
+            instagram
+            srcIg="https://www.instagram.com/anthonyjamesstudio/"
+            web
+            srcWeb="http://www.anthonyjamesstudio.com/work"
+          />
         </Flex>
         <Flex>
-          <SimpleCard image={Tezontle} text="Tezontle" />
-          <SimpleCard image={Conrad} text="Conrad Jon Gondly" />
-          <SimpleCard position="top" image={Pedro} text="Pedro Friedeberg" />
+          <SimpleCard
+            image={Tezontle}
+            text="Tezontle"
+            instagram
+            srcIg="https://www.instagram.com/__tezontle__/"
+            web
+            srcWeb="https://www.apartamentomagazine.com/stories/tezontle/"
+          />
+          <SimpleCard
+            image={Conrad}
+            text="Conrad Jon Gondly"
+            instagram
+            srcIg="https://www.instagram.com/conradjongodly/"
+            web
+            srcWeb="https://conradjongodly.com/"
+          />
+          <SimpleCard
+            position="top"
+            image={Pedro}
+            text="Pedro Friedeberg"
+            instagram
+            srcIG="https://www.instagram.com/pedrofriedeberg/"
+            web
+            srcWeb="https://en.wikipedia.org/wiki/Pedro_Friedeberg"
+          />
         </Flex>
         <Flex>
-          <SimpleCard image={Javier} text="Javier Peláez" />
-          <SimpleCard image={Isauro} text="Isauro Huizar" />
-          <SimpleCard image={Habib} text="Habib Farajadaji" />
+          <SimpleCard
+            image={Javier}
+            text="Javier Peláez"
+            instagram
+            srcIg="https://www.instagram.com/javierpelaezg/"
+            web
+            srcWeb="https://saengergaleria.com/javier-pelez-1"
+          />
+          <SimpleCard
+            image={Isauro}
+            text="Isauro Huizar"
+            instagram
+            srcIg="https://www.instagram.com/isaurohuizar/"
+            web
+            srcWeb="https://isaurohuizar.com/"
+          />
+          <SimpleCard
+            image={Habib}
+            text="Habib Farajadaji"
+            instagram
+            srcIG="https://www.instagram.com/habibfarajabadistudio/"
+            web
+            srcWeb="http://habibfarajabadi.com/index.php"
+          />
         </Flex>
         <Flex>
           <SimpleCard
             position="top"
-            width="33%"
             image={JoseCastañeda}
             text="José Castañeda Lepov"
+            instagram
+            srcIg="https://www.instagram.com/joselepov/"
           />
-          <SimpleCard width="33%" image={JoseGarcia} text="José Garcia" />
+          <SimpleCard
+            image={JoseGarcia}
+            text="José Garcia"
+            youtube
+            srcYoutube="https://www.youtube.com/watch?v=Xxr6lFUK7xM"
+            web
+            srcWeb="http://sic.gob.mx/ficha.php?table=artista&table_id=3937"
+          />
+          <SimpleCard
+            image={Troika}
+            text="Troika"
+            instagram
+            srcIg="https://www.instagram.com/troika_london/"
+            web
+            srcWeb="http://troika.uk.com/"
+          />
         </Flex>
       </div>
       <div className="big-title">

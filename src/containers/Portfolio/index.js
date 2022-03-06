@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Div, Flex, Header } from "./styles";
+import { Link } from "react-router-dom";
 import TitleBar from "../../components/TitleBar";
 import LinkCard from "../../components/LinkCard";
 import jakaBlack from "../../images/jaka-black.svg";
@@ -17,6 +18,7 @@ import prescrypto from "../../images/logos_portfolio/JakaLogos_prescrypto.png";
 import fivehundred from "../../images/logos_portfolio/JakaLogos_500.png";
 
 function Portfolio() {
+
   return (
     <Div>
       <Header>
@@ -28,70 +30,94 @@ function Portfolio() {
       <Container>
         <TitleBar title="ENTREPRENEUR:" />
         <Flex>
+          <Link to='/portfolio-detail/credilikeme'>
           <LinkCard
             image={credilikeme}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/kobra'>
           <LinkCard
             image={kobra}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/guardianes'>
           <LinkCard
             image={guardianes}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
         </Flex>
         <TitleBar title="INVESTMENTS:" />
         <Flex>
+        <Link to='/portfolio-detail/zenda'>
           <LinkCard
             bgColor="#dadada"
             image={zenda}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/trebel'>
           <LinkCard
             image={trebel}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/sixtant'>
           <LinkCard
             bgColor="#dadada"
             image={sixtant}
-            text="Is simply dummy text of the printing and typesetting industry. "
+            text="Is simply dummy text of the printing and typesetting industry."
           />
+          </Link>
         </Flex>
         <Flex>
+        <Link to='/portfolio-detail/finerio'>
           <LinkCard
             image={finerio}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/fondeadora'>
           <LinkCard
             image={fondeadora}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/wowdao'>
           <LinkCard
             image={wowdao}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
         </Flex>
         <div>
-        <LinkCard
+        <Link to='/portfolio-detail/prescrypto'>
+          <LinkCard
             width="33%"
             image={prescrypto}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
         </div>
         <TitleBar title="FUNDS:" />
         <Flex>
+        <Link to='/portfolio-detail/fivehundred'>
           <LinkCard
             width="33%"
             image={fivehundred}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
+          <Link to='/portfolio-detail/sixtant'>
           <LinkCard
             bgColor="#dadada"
             width="33%"
             image={sixtant}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
+          </Link>
         </Flex>
       </Container>
       <div className="banner">

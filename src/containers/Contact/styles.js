@@ -9,8 +9,9 @@ export const Div = styled.div`
 export const BigTitle = styled.div`
   text-align: left;
   font-family: 'Bw Seido Round';
-  font-size: 120px;
+  font-size: 130px;
   text-transform: uppercase;
+  margin-top: 50px;
 `;
 
 export const Subtitle = styled.div`
@@ -20,11 +21,12 @@ export const Subtitle = styled.div`
 export const Flex = styled.div`
   display: flex;
   align-items: center;
+  margin: 50px 0 100px 0;
 `;
 export const Logo = styled.div`
   & img {
-    width: 209px;
-    height: 100px;
+    width: 191px;
+    height: 72px;
   }
 `;
 export const Line = styled.div`

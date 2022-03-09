@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Div, Flex, Header } from "./styles";
+import React from "react";
+import { Container, Div, Flex, Header, Flex2 } from "./styles";
 import { Link } from "react-router-dom";
 import TitleBar from "../../components/TitleBar";
 import LinkCard from "../../components/LinkCard";
@@ -92,7 +92,7 @@ function Portfolio() {
           />
           </Link>
         </Flex>
-        <div>
+        <div className="flex1">
         <Link to='/portfolio-detail/prescrypto'>
           <LinkCard
             width="33%"
@@ -102,10 +102,9 @@ function Portfolio() {
           </Link>
         </div>
         <TitleBar title="FUNDS:" />
-        <Flex>
+        <Flex2>
         <Link to='/portfolio-detail/fivehundred'>
           <LinkCard
-            width="33%"
             image={fivehundred}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
@@ -113,12 +112,11 @@ function Portfolio() {
           <Link to='/portfolio-detail/sixtant'>
           <LinkCard
             bgColor="#dadada"
-            width="33%"
             image={sixtant}
             text="Is simply dummy text of the printing and typesetting industry. "
           />
           </Link>
-        </Flex>
+        </Flex2>
       </Container>
       <div className="banner">
         <img alt="logo" src={logoRound} />

@@ -14,41 +14,121 @@ import wowdao from "../../images/logos_portfolio/JakaLogos_wowdao.png";
 import prescrypto from "../../images/logos_portfolio/JakaLogos_prescrypto.png";
 import fivehundred from "../../images/logos_portfolio/JakaLogos_500.png";
 
+const credilikemeInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "credilike.me",
+    link: "https://credilike.me/",
+  },
+];
+
+const kobraInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "kobra.red",
+    link: "https://kobra.red/",
+  },
+];
+
+const guardianesInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const zendaInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const trebelInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const sixtantInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const finerioInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const fondeadoraInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const wowdaoInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const prescryptoInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
+const fivehundredInfo = [
+  {
+    text: "La visión es reflejar una marca que da esperanza y armonía, que resulta en libertad de crear, jugar y descubrir. Donde se sienta la energía de un Toro y la soltura de un improvisador haciendo música dentro de un todo que le contiene",
+    url: "url",
+    link: "https://www.google.com/",
+  },
+];
+
 function PortfolioDetail() {
   const { id } = useParams();
-  console.log("id", id);
-
-  const credilikemeInfo = [
-    {
-      text: "texto",
-      url: "url",
-    },
-  ];
-
+  
   const getInfo = (id) => {
     switch (id) {
       case "credilikeme":
         return credilikemeInfo;
       case "kobra":
-        return credilikemeInfo;
+        return kobraInfo;
       case "guardianes":
-        return credilikemeInfo;
+        return guardianesInfo;
       case "zenda":
-        return credilikemeInfo;
+        return zendaInfo;
       case "trebel":
-        return credilikemeInfo;
+        return trebelInfo;
       case "sixtant":
-        return credilikemeInfo;
+        return sixtantInfo;
       case "finerio":
-        return credilikemeInfo;
+        return finerioInfo;
       case "fondeadora":
-        return credilikemeInfo;
+        return fondeadoraInfo;
       case "wowdao":
-        return credilikemeInfo;
+        return wowdaoInfo;
       case "prescrypto":
-        return credilikemeInfo;
+        return prescryptoInfo;
       case "fivehundred":
-        return credilikemeInfo;
+        return fivehundredInfo;
       default:
         return credilikemeInfo;
     }
@@ -85,13 +165,15 @@ function PortfolioDetail() {
 
   return (
     <Div>
-      {getInfo(id).map(item => (
-          <>
-          <Logo><img src={getLogo(id)} alt="logo" /></Logo>
+      {getInfo(id).map((item) => (
+        <>
+          <Logo>
+            <img src={getLogo(id)} alt="logo" />
+          </Logo>
           <Divider />
           <Text>{item.text}</Text>
-          <Url>{item.url}</Url>
-          </>
+          <Url><a href={item.link} target="blank">{item.url}</a></Url>
+        </>
       ))}
     </Div>
   );

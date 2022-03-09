@@ -153,7 +153,7 @@ function Collection() {
             image={Pedro}
             text="Pedro Friedeberg"
             instagram
-            srcIG="https://www.instagram.com/pedrofriedeberg/"
+            srcIg="https://www.instagram.com/pedrofriedeberg/"
             web
             srcWeb="https://en.wikipedia.org/wiki/Pedro_Friedeberg"
           />
@@ -179,7 +179,7 @@ function Collection() {
             image={Habib}
             text="Habib Farajadaji"
             instagram
-            srcIG="https://www.instagram.com/habibfarajabadistudio/"
+            srcIg="https://www.instagram.com/habibfarajabadistudio/"
             web
             srcWeb="http://habibfarajabadi.com/index.php"
           />

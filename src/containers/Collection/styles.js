@@ -9,7 +9,19 @@ export const Div = styled.div`
   }
   & .big-title {
     background: #000;
+    display: flex;
+    justify-content: center;
     & img {
+      width: 981px;
+      ${mediaQuery} {
+      width: 100%;
+    }
+    }
+  }
+  & .artists {
+    width: 981px;
+    margin: 0 auto;
+    ${mediaQuery} {
       width: 100%;
     }
   }
@@ -19,10 +31,13 @@ export const Text = styled.div`
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Light';
-    padding: 0 200px;
+    // padding: 0 200px;
+    width: 981px;
+    margin: 0 auto;
 
     ${mediaQuery} {
       padding: 0 24px;
+      width: 100%;
     }
   
     & span {
@@ -36,8 +51,8 @@ export const Text = styled.div`
 
 export const Flex = styled.div`
   display: flex;
-  margin: 30px 0;
-  padding: 0 200px;
+  // margin: 30px 0;
+  // padding: 0 200px;
   & > div:nth-child(2) {
     margin: 0 15px;
   }

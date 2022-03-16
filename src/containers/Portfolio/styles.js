@@ -11,7 +11,10 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
     & img {
-      width: 100%;
+      width: 981px;
+      ${mediaQuery} {
+        width: 100%;
+      }
     }
     
     & span {
@@ -47,10 +50,13 @@ export const Header = styled.div`
 `;
 
 export const Container = styled.div`
-  margin: 0 200px;
+  // margin: 0 200px;
+  width: 981px;
+  margin: 0 auto;
 
   ${mediaQuery} {
-    margin: 0 24px;
+    // margin: 0 24px;
+    width: 100%;
   }
 
   & .flex1{

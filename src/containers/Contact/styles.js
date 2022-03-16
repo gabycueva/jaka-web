@@ -1,9 +1,15 @@
 import styled from "styled-components";
+import { mediaQuery } from "../../helpers/responsive";
 
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 981px;
+  margin: 0 auto;
+  ${mediaQuery} {
+      width: 100%;
+    }
 `;
 
 export const BigTitle = styled.div`

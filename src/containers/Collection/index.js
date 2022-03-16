@@ -104,7 +104,7 @@ function Collection() {
         </span>
         <span>Armando Kuroda</span>
       </Text>
-      <div>
+      <div className="artists">
         <Flex>
           <SimpleCard
             image={Felipe}

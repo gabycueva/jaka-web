@@ -41,12 +41,12 @@ function Home() {
             and grateful people. If you are one of them, please connect with us.{" "}
           </p>
         </span>
-      </Intro>
-      <Gif>
+        <Gif>
         <div>
           <img alt="trust" src={trustCode} />
         </div>
       </Gif>
+      </Intro>
     </div>
   );
 }

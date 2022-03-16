@@ -7,9 +7,11 @@ export const Intro = styled.div`
   align-content: center;
   flex-direction: column;
   flex-direction: column;
-  margin: 20px 0 50px 0;
+  width: 981px;
+  margin: 0 auto;
   
   & .title {
+    margin-top: 50px;
     margin-bottom: 20px;
     font-family: 'Bw Seido Round';
     font-size: 40px;
@@ -18,12 +20,13 @@ export const Intro = styled.div`
   }
   
   & .description {
-    margin: 0 200px;
+    // margin: 0 200px;
     font-family: 'Roboto Light';
     font-size: 18px;
 
     ${mediaQuery} {
-      margin: 0 24px;
+      // margin: 0 24px;
+      width: 100%;
     }
 
   }
@@ -37,7 +40,7 @@ export const Gif = styled.div`
   flex-direction: column;
   margin-bottom: 50px;
      & img {
-       width: 70%;
+       width: 100%;
      }
     & span {
       font-family: 'Bw Seido Round Light';
